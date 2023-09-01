@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      *{
+        font-family: "Poppins", sans-serif;
+      }
+
+      body{
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+      }
+
+      .btn-primary {
+        background-color: rgb(114, 33, 33) !important;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color:  rgb(230, 17, 17) !important;
+        border: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+/* buat mobile */
+      @media  (max-width: 932px) {
+        .hidden{
+          display: none !important;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="row m-0 h-100">
+        <div class="col d-flex justify-content-center align-items-center hidden">
+            <img src="images/gambar.svg" class="w-75 h-70" alt="Image login">
+            
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <form class="w-75">
+          <h3 class="text-center mb-4">Masuk Ke Akunmu</h3>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  
+            </div>
+            <div class="mb-4">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+     
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+            <div class="text-center mt-3">
+            <a href="#">Registrasi</a>
+            </div>
+          </form>
+        </div>
+      
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
